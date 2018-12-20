@@ -1,0 +1,10 @@
+#!/bin/sh
+
+STATUS=$(ping -c 4 -W 5 -w 5 -q $NGINX_UPSTREAM_HOST)
+
+if [ "$STATUS" != "0" ]; then
+    nginx -s reload
+    exit 1
+fi
+
+exit 0
