@@ -1,4 +1,4 @@
-# twofour/nginx-proxy
+# twofour/nginx-reverse-proxy
 
 ## Environment variables
 
